@@ -21,7 +21,7 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
 
-            <!-- Correct Hamburger Icon -->
+            
             <button class="menu-toggle" aria-label="Toggle menu">
                 <img src="./assets/menu-bar.png" alt="Menu" class="menu-icon">
             </button>
@@ -31,7 +31,7 @@
 </nav>
 
 
-    <!-- Hero Section -->
+    <!-- Hero  -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery -->
 <section class="gallery">
     <div class="container">
         <div class="gallery-content">
@@ -81,43 +81,5 @@
     </div>
 </section>
 
-
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Lorem Ipsum Restaurant. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-wrapper')) {
-                navMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
-            }
-        });
-
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
-            });
-        });
-    </script>
 </body>
 </html>
